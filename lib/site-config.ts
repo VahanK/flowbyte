@@ -152,20 +152,20 @@ export interface Work {
 
 export const work: Work[] = [
   {
-    name: "GJ Style",
+    name: "Wholesale Operations Platform",
     type: "B2B Platform",
     stack: ["Next.js", "Supabase"],
     description:
-      "End-to-end wholesale portal for a MENA jewelry manufacturer. Per-client catalogs, real-time inventory, custom CMS.",
-    isReal: true,
+      "End-to-end wholesale portal for a MENA jewelry manufacturer. Per-client catalogs, real-time inventory, production tracking, custom CMS.",
+    isReal: false,
   },
   {
-    name: "Elevate Training & Consultancy",
+    name: "Cross-Region Corporate Site",
     type: "Corporate Site",
     stack: ["Next.js"],
     description:
-      "Multi-page corporate site for a Dubai-based training firm operating across MENA.",
-    isReal: true,
+      "Multi-page corporate site for a regional training and consultancy firm operating across MENA.",
+    isReal: false,
   },
 ]
 

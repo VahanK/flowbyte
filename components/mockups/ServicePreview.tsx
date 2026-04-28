@@ -61,14 +61,14 @@ function B2BPreview() {
   ]
 
   const orders = [
-    { id: "GJ-1042", client: "Mira Atelier", item: "18k Hoop Earrings", stage: "Polishing", due: "Apr 30", urgent: false },
-    { id: "GJ-1041", client: "Beirut Gold Co.", item: "Diamond Pendant", stage: "QA", due: "Apr 29", urgent: true },
-    { id: "GJ-1040", client: "Saifi Jewelers", item: "Tennis Bracelet", stage: "Casting", due: "May 02", urgent: false },
-    { id: "GJ-1039", client: "Mira Atelier", item: "Signet Ring (×6)", stage: "Casting", due: "May 04", urgent: false },
+    { id: "ORD-1042", client: "Client A", item: "18k Hoop Earrings", stage: "Polishing", due: "Apr 30", urgent: false },
+    { id: "ORD-1041", client: "Client B", item: "Diamond Pendant", stage: "QA", due: "Apr 29", urgent: true },
+    { id: "ORD-1040", client: "Client C", item: "Tennis Bracelet", stage: "Casting", due: "May 02", urgent: false },
+    { id: "ORD-1039", client: "Client A", item: "Signet Ring (×6)", stage: "Casting", due: "May 04", urgent: false },
   ]
 
   return (
-    <PreviewFrame url="portal.gjstyle.com/admin">
+    <PreviewFrame url="portal.your-business.com/admin">
       <div className="space-y-4">
         <div>
           <h4 className="font-display text-base font-semibold text-primary mb-3">Production board</h4>
@@ -144,7 +144,7 @@ function BookingPreview() {
   const times = ["10:00", "11:30", "13:00", "14:30"]
 
   return (
-    <PreviewFrame url="book.mistika.lb/admin">
+    <PreviewFrame url="book.your-studio.com/admin">
       <div>
         <div className="flex items-center justify-between mb-3">
           <div>
@@ -200,7 +200,7 @@ function EcommercePreview() {
   ]
 
   return (
-    <PreviewFrame url="shop.byline.lb">
+    <PreviewFrame url="shop.your-store.com">
       <div className="space-y-3">
         <div className="flex items-center justify-between">
           <h4 className="font-display text-base font-semibold text-primary">Storefront</h4>
