@@ -9,6 +9,7 @@ import { whatsappLink, cn } from "@/lib/utils"
 
 const navItems = [
   { href: "#services", label: "Services" },
+  { href: "#work", label: "Work" },
   { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },
 ]
