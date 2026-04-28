@@ -32,10 +32,6 @@ const faqs: FaqItem[] = [
     q: "What happens after launch?",
     a: "We don't disappear. Training for your team, then ongoing support via WhatsApp. Monthly check-ins to see what else you need. Small tweaks are usually included; bigger features get scoped separately.",
   },
-  {
-    q: "Will I be locked into working with you?",
-    a: "No. The code is yours. The data is yours. If we ever stop working together, you get full handoff and documentation. We earn the relationship every month.",
-  },
 ]
 
 export function FAQ() {

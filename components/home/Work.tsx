@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Container } from "@/components/layout/Container"
+import { ConceptThumbnail } from "@/components/mockups/ConceptThumbnail"
 import { cn } from "@/lib/utils"
 
 interface ConceptBuild {
@@ -10,6 +11,7 @@ interface ConceptBuild {
   stack: string[]
   description: string
   accent: "blue" | "amber" | "green"
+  thumb: "wholesale" | "booking" | "clinic"
 }
 
 const concepts: ConceptBuild[] = [
@@ -18,16 +20,18 @@ const concepts: ConceptBuild[] = [
     type: "B2B Platform",
     stack: ["Next.js", "Postgres"],
     description:
-      "Per-client catalogs with custom pricing, real-time inventory across raw and finished goods, sales-rep tools, and a production board with stages and worker assignments.",
+      "Per-client catalogs with custom pricing, real-time inventory, sales-rep tools, and a production board with stages and worker assignments.",
     accent: "blue",
+    thumb: "wholesale",
   },
   {
     name: "Beauty Lounge Operations",
     type: "Booking System",
     stack: ["Next.js", "Postgres"],
     description:
-      "Multi-staff booking calendar, customer profiles with visit history and preferences, packages and memberships, WhatsApp confirmations and reminders.",
+      "Multi-staff booking calendar, customer profiles with visit history, packages and memberships, WhatsApp confirmations and reminders.",
     accent: "amber",
+    thumb: "booking",
   },
   {
     name: "Clinic Management",
@@ -36,6 +40,7 @@ const concepts: ConceptBuild[] = [
     description:
       "Patient records with treatment timelines, multi-doctor calendar, treatment plans with insurance coverage, recall reminders, and consumables inventory.",
     accent: "green",
+    thumb: "clinic",
   },
 ]
 
@@ -85,19 +90,10 @@ export function Work() {
                   accentMap[concept.accent]
                 )}
               >
-                <div
-                  aria-hidden
-                  className="absolute inset-0 opacity-[0.04]"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(to right, #0F0F14 1px, transparent 1px), linear-gradient(to bottom, #0F0F14 1px, transparent 1px)",
-                    backgroundSize: "32px 32px",
-                  }}
-                />
-                <div className="absolute inset-x-5 inset-y-6 rounded-md bg-surface border border-edge shadow-sm" />
-                <div className="absolute top-3 left-3 flex items-center gap-1.5">
-                  <span className={cn("size-2 rounded-full", dotMap[concept.accent])} />
-                  <span className="text-[10px] font-semibold uppercase tracking-wider text-muted">
+                <ConceptThumbnail type={concept.thumb} />
+                <div className="absolute top-2 right-2 flex items-center gap-1 z-10">
+                  <span className={cn("size-1.5 rounded-full", dotMap[concept.accent])} />
+                  <span className="text-[9px] font-semibold uppercase tracking-wider text-muted bg-surface/80 backdrop-blur-sm px-1.5 py-0.5 rounded">
                     Concept
                   </span>
                 </div>
