@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Container } from "@/components/layout/Container"
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
 import { processSteps } from "@/lib/site-config"
 
 export function Process() {
@@ -44,14 +43,6 @@ export function Process() {
             </motion.li>
           ))}
         </ol>
-
-        <div className="mt-12 flex justify-center">
-          <WhatsAppButton
-            message="Hi FlowByte — I'd like to book a free discovery call."
-            label="Book a free discovery call"
-            size="lg"
-          />
-        </div>
       </Container>
     </section>
   )

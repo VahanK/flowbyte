@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Check } from "lucide-react"
 import { Container } from "@/components/layout/Container"
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
 import { services, type Service } from "@/lib/site-config"
 import { cn, whatsappLink } from "@/lib/utils"
 import { ServicePreview } from "@/components/mockups/ServicePreview"
@@ -27,20 +26,6 @@ export function Services() {
           align={idx % 2 === 0 ? "left" : "right"}
         />
       ))}
-
-      <Container className="py-16 md:py-20 text-center border-t border-edge">
-        <p className="italic text-muted text-base md:text-lg max-w-[640px] mx-auto">
-          Don&apos;t see what you need? Tell us what you have in mind — if it
-          has a workflow, we can build it.
-        </p>
-        <div className="mt-6 flex justify-center">
-          <WhatsAppButton
-            message="Hi FlowByte — I have a custom build in mind that doesn't fit the four service lines."
-            label="Tell us what you have in mind"
-            size="lg"
-          />
-        </div>
-      </Container>
     </section>
   )
 }

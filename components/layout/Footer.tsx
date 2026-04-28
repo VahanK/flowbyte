@@ -7,8 +7,6 @@ const navColumns = [
     heading: "Navigate",
     links: [
       { href: "#services", label: "Services" },
-      { href: "#industries", label: "Industries" },
-      { href: "#work", label: "Work" },
       { href: "#process", label: "Process" },
       { href: "#contact", label: "Contact" },
     ],
