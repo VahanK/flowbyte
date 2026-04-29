@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { ArrowRight, Check } from "lucide-react"
 import { Container } from "@/components/layout/Container"
 import { services, type Service } from "@/lib/site-config"
-import { cn, whatsappLink } from "@/lib/utils"
+import { cn, mailtoLink } from "@/lib/utils"
 import { ServicePreview } from "@/components/mockups/ServicePreview"
 
 export function Services() {
@@ -103,9 +103,7 @@ function ServiceBlock({
             </div>
 
             <a
-              href={whatsappLink(service.whatsappMessage)}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={mailtoLink(service.inquirySubject)}
               className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium text-base group"
             >
               Discuss {service.name.toLowerCase()}

@@ -11,8 +11,6 @@ const buttonVariants = cva(
           "bg-primary text-surface hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/10",
         secondary:
           "border border-primary text-primary bg-transparent hover:bg-primary hover:text-surface",
-        whatsapp:
-          "bg-whatsapp text-white hover:bg-whatsapp/90 hover:shadow-lg hover:shadow-whatsapp/20",
         ghost:
           "text-primary hover:bg-surface-alt",
         link:

@@ -5,10 +5,12 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const WHATSAPP_NUMBER = "96171180871"
-
-export function whatsappLink(message: string) {
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
-}
-
 export const CONTACT_EMAIL = "contact@flow-byte.com"
+
+export function mailtoLink(subject?: string, body?: string) {
+  const params = new URLSearchParams()
+  if (subject) params.set("subject", subject)
+  if (body) params.set("body", body)
+  const qs = params.toString()
+  return `mailto:${CONTACT_EMAIL}${qs ? `?${qs}` : ""}`
+}

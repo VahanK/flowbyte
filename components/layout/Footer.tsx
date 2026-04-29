@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Container } from "@/components/layout/Container"
-import { CONTACT_EMAIL, whatsappLink } from "@/lib/utils"
+import { CONTACT_EMAIL } from "@/lib/utils"
 
 const navColumns = [
   {
@@ -43,16 +43,6 @@ export function Footer() {
                 className="block text-primary hover:text-accent transition-colors"
               >
                 {CONTACT_EMAIL}
-              </a>
-              <a
-                href={whatsappLink(
-                  "Hi, I came across FlowByte — interested in working together."
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-primary hover:text-accent transition-colors"
-              >
-                WhatsApp
               </a>
             </div>
           </div>

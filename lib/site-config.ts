@@ -21,7 +21,7 @@ export interface Service {
   features: string[]
   builtFor: string
   icon: LucideIcon
-  whatsappMessage: string
+  inquirySubject: string
 }
 
 export const services: Service[] = [
@@ -45,8 +45,7 @@ export const services: Service[] = [
     builtFor:
       "Manufacturers, wholesalers, distributors, importers — businesses where clients order repeatedly and the operation behind the order is complex.",
     icon: Building2,
-    whatsappMessage:
-      "Hi FlowByte — I'd like to discuss a custom B2B platform for my business.",
+    inquirySubject: "FlowByte — B2B platform inquiry",
   },
   {
     number: "02",
@@ -69,8 +68,7 @@ export const services: Service[] = [
     builtFor:
       "Beauty lounges, salons, spas, dental and medical clinics, gyms, tutors, repair shops, escape rooms — any business that books client time.",
     icon: CalendarCheck,
-    whatsappMessage:
-      "Hi FlowByte — I'd like to discuss a booking and operations system.",
+    inquirySubject: "FlowByte — Booking system inquiry",
   },
   {
     number: "03",
@@ -92,8 +90,7 @@ export const services: Service[] = [
     builtFor:
       "D2C brands, retailers, small manufacturers — anyone selling online to consumers in Lebanon and the region.",
     icon: ShoppingBag,
-    whatsappMessage:
-      "Hi FlowByte — I'd like to discuss an e-commerce store.",
+    inquirySubject: "FlowByte — E-commerce store inquiry",
   },
   {
     number: "04",
@@ -114,8 +111,7 @@ export const services: Service[] = [
     builtFor:
       "Any business with operational complexity — manufacturers, distributors, service companies, agencies. Anyone with team members spending hours on repetitive work.",
     icon: Workflow,
-    whatsappMessage:
-      "Hi FlowByte — I'd like to discuss internal systems and automation.",
+    inquirySubject: "FlowByte — Internal systems inquiry",
   },
 ]
 

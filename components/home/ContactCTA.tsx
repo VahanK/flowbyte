@@ -1,9 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Mail } from "lucide-react"
 import { Container } from "@/components/layout/Container"
 import { Button } from "@/components/ui/Button"
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
+import { CONTACT_EMAIL, mailtoLink } from "@/lib/utils"
 
 export function ContactCTA() {
   return (
@@ -31,17 +32,24 @@ export function ContactCTA() {
             We reply within 4 hours, Monday to Saturday. Free 30-minute
             discovery call to see if we&apos;re a fit — no obligation.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <WhatsAppButton size="xl" />
-            <a href="mailto:contact@flow-byte.com">
+          <div className="flex flex-col sm:flex-row gap-3 items-start">
+            <a
+              href={mailtoLink(
+                "FlowByte — interested in working together",
+              )}
+            >
               <Button
-                variant="ghost"
+                variant="primary"
                 size="xl"
-                className="text-surface hover:bg-surface/10 border border-surface/20"
+                className="bg-surface text-primary hover:bg-surface/90"
               >
-                Or write to us →
+                <Mail className="size-4" />
+                Email us
               </Button>
             </a>
+            <span className="text-sm text-surface/60 sm:ml-2 sm:self-center">
+              {CONTACT_EMAIL}
+            </span>
           </div>
         </motion.div>
       </Container>

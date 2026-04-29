@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Manrope, Inter } from "next/font/google"
 import Script from "next/script"
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css"
 
@@ -64,22 +64,13 @@ const organizationSchema = {
   logo: "https://flow-byte.com/logo.png",
   description:
     "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow, shipped in weeks.",
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      email: "contact@flow-byte.com",
-      contactType: "customer support",
-      areaServed: "LB",
-      availableLanguage: ["English", "Arabic"],
-    },
-    {
-      "@type": "ContactPoint",
-      telephone: "+961-71-180-871",
-      contactType: "sales",
-      areaServed: "LB",
-      availableLanguage: ["English", "Arabic"],
-    },
-  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "contact@flow-byte.com",
+    contactType: "customer support",
+    areaServed: "LB",
+    availableLanguage: ["English", "Arabic"],
+  },
   address: {
     "@type": "PostalAddress",
     addressCountry: "LB",

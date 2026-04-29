@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Container } from "@/components/layout/Container"
 import { Button } from "@/components/ui/Button"
-import { whatsappLink, cn } from "@/lib/utils"
+import { mailtoLink, cn } from "@/lib/utils"
 
 const navItems = [
   { href: "#services", label: "Services" },
@@ -14,8 +14,7 @@ const navItems = [
   { href: "#contact", label: "Contact" },
 ]
 
-const talkMessage =
-  "Hi, I came across FlowByte — interested in working together."
+const talkSubject = "FlowByte — interested in working together"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -66,11 +65,7 @@ export function Header() {
         </nav>
 
         <div className="hidden md:block">
-          <a
-            href={whatsappLink(talkMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={mailtoLink(talkSubject)}>
             <Button variant="primary" size="md">
               Talk to us
             </Button>
@@ -103,12 +98,7 @@ export function Header() {
                 </a>
               ))}
             </nav>
-            <a
-              href={whatsappLink(talkMessage)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 block"
-            >
+            <a href={mailtoLink(talkSubject)} className="mt-8 block">
               <Button variant="primary" size="lg" className="w-full">
                 Talk to us
               </Button>

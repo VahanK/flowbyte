@@ -30,7 +30,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "What happens after launch?",
-    a: "We don't disappear. Training for your team, then ongoing support via WhatsApp. Monthly check-ins to see what else you need. Small tweaks are usually included; bigger features get scoped separately.",
+    a: "We don't disappear. Training for your team, then ongoing support via email. Monthly check-ins to see what else you need. Small tweaks are usually included; bigger features get scoped separately.",
   },
 ]
 

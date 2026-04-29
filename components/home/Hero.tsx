@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Container } from "@/components/layout/Container"
 import { Button } from "@/components/ui/Button"
-import { WhatsAppButton } from "@/components/shared/WhatsAppButton"
+import { mailtoLink } from "@/lib/utils"
 
 export function Hero() {
   const scrollToServices = () => {
@@ -47,7 +47,11 @@ export function Hero() {
               Explore services
               <ArrowRight className="size-4" />
             </Button>
-            <WhatsAppButton size="xl" />
+            <a href={mailtoLink("FlowByte — interested in working together")}>
+              <Button variant="secondary" size="xl">
+                Get in touch
+              </Button>
+            </a>
           </motion.div>
 
           <motion.p
