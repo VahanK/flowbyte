@@ -17,7 +17,7 @@ export function ServicePreview({ slug }: ServicePreviewProps) {
     case "internal-systems":
       return <InternalPreview />
     default:
-      return <PreviewFrame title="Preview" url="dashboard.flowbyte.studio">
+      return <PreviewFrame title="Preview" url="dashboard.flow-byte.com">
         <div className="text-sm text-muted">Mockup coming soon.</div>
       </PreviewFrame>
   }

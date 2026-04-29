@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://flowbyte.studio"),
+  metadataBase: new URL("https://flow-byte.com"),
   title: {
     default: "FlowByte — Custom platforms for Lebanese businesses",
     template: "%s · FlowByte",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "FlowByte — Custom platforms for Lebanese businesses",
     description:
       "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow, shipped in weeks.",
-    url: "https://flowbyte.studio",
+    url: "https://flow-byte.com",
     siteName: "FlowByte",
     locale: "en_US",
     type: "website",

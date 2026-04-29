@@ -33,7 +33,7 @@ export function ContactCTA() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <WhatsAppButton size="xl" />
-            <a href="mailto:hello@flowbyte.studio">
+            <a href="mailto:contact@flow-byte.com">
               <Button
                 variant="ghost"
                 size="xl"
