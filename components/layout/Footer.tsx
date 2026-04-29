@@ -35,8 +35,7 @@ export function Footer() {
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted leading-relaxed">
               Custom websites and platforms for Lebanese businesses. Brand
-              sites, e-commerce, booking systems, B2B portals, internal
-              dashboards.
+              sites, booking systems, B2B portals, internal dashboards.
             </p>
             <div className="mt-6 space-y-2 text-sm">
               <a

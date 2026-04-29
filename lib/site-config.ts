@@ -8,7 +8,6 @@ import {
   Building2,
   CalendarCheck,
   Globe,
-  ShoppingBag,
   Workflow,
   type LucideIcon,
 } from "lucide-react"
@@ -95,28 +94,6 @@ export const services: Service[] = [
   },
   {
     number: "04",
-    slug: "ecommerce",
-    name: "E-Commerce Stores",
-    tagline:
-      "Online stores with admin dashboards and WhatsApp ordering — live in a week.",
-    description:
-      "A real online store, not a Shopify clone. Storefront on your own domain, admin panel built around your workflow, orders delivered to your WhatsApp. No transaction fees, no app marketplace nightmare.",
-    features: [
-      "Storefront on your own domain with your branding",
-      "Admin panel — add products, edit prices, update stock from any browser",
-      "WhatsApp checkout — orders land in your WhatsApp instantly",
-      "Cart with multi-product orders",
-      "Custom categories built around how you actually sell",
-      "Zero transaction fees (Shopify takes 2.9% per sale; we don't)",
-      "Optional product photography, setup, and onboarding",
-    ],
-    builtFor:
-      "D2C brands, retailers, small manufacturers — anyone selling online to consumers in Lebanon and the region.",
-    icon: ShoppingBag,
-    inquirySubject: "FlowByte — E-commerce store inquiry",
-  },
-  {
-    number: "05",
     slug: "internal-systems",
     name: "Internal Systems & Automation",
     tagline:

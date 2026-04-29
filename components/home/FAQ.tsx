@@ -14,11 +14,11 @@ interface FaqItem {
 const faqs: FaqItem[] = [
   {
     q: "How much does it cost?",
-    a: "Project-based, with a one-time setup fee plus a monthly subscription that covers hosting and ongoing support. E-commerce stores start around $150 setup + $25/month. Custom B2B platforms and internal systems are scoped on a discovery call — typically $500–$5,000 setup with $75–$500/month recurring depending on complexity.",
+    a: "Project-based, with a one-time setup fee plus a monthly subscription that covers hosting and ongoing support. Brand websites and booking systems start around $150 setup + $25/month. Custom B2B platforms and internal systems are scoped on a discovery call — typically $500–$5,000 setup with $75–$500/month recurring depending on complexity.",
   },
   {
     q: "How long does a build take?",
-    a: "E-commerce stores go live in about a week. Booking systems take 1–2 weeks. Custom B2B platforms run 2–4 weeks depending on scope. Internal dashboards and automations land in 1–3 weeks. We give you a firm timeline in the proposal — no rolling deadlines.",
+    a: "Brand websites go live in about a week. Booking systems take 1–2 weeks. Custom B2B platforms run 2–4 weeks depending on scope. Internal dashboards and automations land in 1–3 weeks. We give you a firm timeline in the proposal — no rolling deadlines.",
   },
   {
     q: "Why not just use Shopify, WordPress, or foreign software?",

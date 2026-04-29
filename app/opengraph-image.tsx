@@ -54,7 +54,7 @@ export default function OpenGraphImage() {
               letterSpacing: "-0.005em",
             }}
           >
-            Websites · E-commerce · Booking · B2B portals · Internal dashboards
+            Websites · Booking · B2B portals · Internal dashboards
           </div>
         </div>
 

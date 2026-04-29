@@ -33,8 +33,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="mt-7 max-w-[600px] text-lg md:text-xl text-muted leading-relaxed"
           >
-            Brand websites, e-commerce, booking systems, B2B portals, internal
-            dashboards — designed around your business, shipped in weeks.
+            Brand websites, booking systems, B2B portals, internal dashboards —
+            designed around your business, shipped in weeks.
           </motion.p>
 
           <motion.div

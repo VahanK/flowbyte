@@ -14,8 +14,6 @@ export function ServicePreview({ slug }: ServicePreviewProps) {
       return <B2BPreview />
     case "booking-operations":
       return <BookingPreview />
-    case "ecommerce":
-      return <EcommercePreview />
     case "internal-systems":
       return <InternalPreview />
     default:
@@ -250,46 +248,6 @@ function BookingPreview() {
               })}
             </div>
           ))}
-        </div>
-      </div>
-    </PreviewFrame>
-  )
-}
-
-/* ─── E-Commerce Storefront + Admin Split ─── */
-
-function EcommercePreview() {
-  const products = [
-    { name: "Linen Shirt", price: "$48", stock: 24 },
-    { name: "Canvas Tote", price: "$22", stock: 12 },
-    { name: "Olive Oil 1L", price: "$15", stock: 56 },
-    { name: "Ceramic Mug", price: "$14", stock: 8 },
-  ]
-
-  return (
-    <PreviewFrame url="shop.your-store.com">
-      <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h4 className="font-display text-base font-semibold text-primary">Storefront</h4>
-          <span className="text-[10px] text-muted">12 orders today</span>
-        </div>
-        <div className="grid grid-cols-2 gap-2">
-          {products.map((p) => (
-            <div key={p.name} className="rounded-lg border border-edge p-3 bg-surface-alt">
-              <div className="aspect-[4/3] rounded-md bg-gradient-to-br from-edge to-surface mb-2.5" />
-              <div className="flex items-center justify-between gap-2">
-                <span className="text-xs font-semibold text-primary truncate">{p.name}</span>
-                <span className="text-xs font-mono text-primary shrink-0">{p.price}</span>
-              </div>
-              <span className="text-[10px] text-muted">{p.stock} in stock</span>
-            </div>
-          ))}
-        </div>
-        <div className="rounded-lg bg-whatsapp/10 border border-whatsapp/30 px-3 py-2.5 flex items-center gap-2">
-          <span className="size-2 rounded-full bg-whatsapp animate-pulse" />
-          <span className="text-xs text-primary">
-            New order from <strong>Ahmad N.</strong> · $84 · waiting in WhatsApp
-          </span>
         </div>
       </div>
     </PreviewFrame>
