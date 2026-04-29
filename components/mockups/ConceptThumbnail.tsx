@@ -2,10 +2,12 @@
 
 import { cn } from "@/lib/utils"
 
-type ConceptType = "wholesale" | "booking" | "clinic"
+type ConceptType = "website" | "wholesale" | "booking" | "clinic"
 
 export function ConceptThumbnail({ type }: { type: ConceptType }) {
   switch (type) {
+    case "website":
+      return <WebsiteThumb />
     case "wholesale":
       return <WholesaleThumb />
     case "booking":
@@ -25,6 +27,48 @@ function ThumbFrame({ children }: { children: React.ReactNode }) {
       </div>
       <div className="flex-1 p-2.5 min-h-0 overflow-hidden">{children}</div>
     </div>
+  )
+}
+
+/* ─── Website: brand site landing ─── */
+function WebsiteThumb() {
+  return (
+    <ThumbFrame>
+      <div className="flex items-center justify-between mb-2 pb-1.5 border-b border-edge">
+        <div className="flex items-center gap-1">
+          <div className="size-2.5 rounded bg-primary" />
+          <span className="text-[7px] font-semibold text-primary">YourBrand</span>
+        </div>
+        <div className="flex items-center gap-1.5 text-[6px] text-muted">
+          <span>About</span>
+          <span>Work</span>
+          <span className="px-1 py-0.5 rounded bg-primary text-surface text-[5px] font-medium">
+            Quote
+          </span>
+        </div>
+      </div>
+      <div className="mb-2">
+        <span className="text-[6px] font-semibold uppercase tracking-wider text-accent">
+          Architecture
+        </span>
+        <h5 className="font-display text-[10px] font-semibold text-primary leading-[1.05] mt-0.5 mb-1.5 tracking-tight">
+          Spaces that tell <span className="text-accent">your story</span>.
+        </h5>
+        <div className="flex items-center gap-1">
+          <span className="text-[6px] px-1.5 py-0.5 rounded bg-primary text-surface font-medium">
+            View
+          </span>
+          <span className="text-[6px] px-1.5 py-0.5 rounded border border-edge text-primary font-medium">
+            Contact
+          </span>
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-0.5">
+        <div className="aspect-[4/3] rounded-sm bg-warning/15 border border-edge" />
+        <div className="aspect-[4/3] rounded-sm bg-accent/12 border border-edge" />
+        <div className="aspect-[4/3] rounded-sm bg-accent-2/12 border border-edge" />
+      </div>
+    </ThumbFrame>
   )
 }
 

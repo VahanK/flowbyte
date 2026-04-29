@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s · FlowByte",
   },
   description:
-    "Wholesale portals, booking systems, e-commerce stores, internal dashboards — designed around your workflow, shipped in weeks. Beirut-based.",
+    "Brand websites, e-commerce stores, booking systems, B2B portals, internal dashboards — designed around your business, shipped in weeks. Beirut-based.",
   keywords: [
     "FlowByte",
     "Lebanon web platform",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FlowByte — Custom platforms for Lebanese businesses",
     description:
-      "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow, shipped in weeks.",
+      "Brand websites, e-commerce, booking systems, B2B portals, internal dashboards — designed around your business, shipped in weeks.",
     url: "https://flow-byte.com",
     siteName: "FlowByte",
     locale: "en_US",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FlowByte — Custom platforms for Lebanese businesses",
     description:
-      "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow.",
+      "Brand websites, e-commerce, booking systems, B2B portals, internal dashboards — designed around your business.",
   },
   robots: { index: true, follow: true },
 }
@@ -63,7 +63,7 @@ const organizationSchema = {
   url: "https://flow-byte.com",
   logo: "https://flow-byte.com/logo.png",
   description:
-    "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow, shipped in weeks.",
+    "Brand websites, e-commerce, booking systems, B2B portals, internal dashboards — designed around your business, shipped in weeks.",
   contactPoint: {
     "@type": "ContactPoint",
     email: "contact@flow-byte.com",

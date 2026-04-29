@@ -34,8 +34,9 @@ export function Footer() {
               flowbyte<span className="text-accent">.</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted leading-relaxed">
-              Custom platforms for Lebanese businesses. Wholesale portals,
-              booking systems, e-commerce, internal dashboards.
+              Custom websites and platforms for Lebanese businesses. Brand
+              sites, e-commerce, booking systems, B2B portals, internal
+              dashboards.
             </p>
             <div className="mt-6 space-y-2 text-sm">
               <a

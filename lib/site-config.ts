@@ -7,6 +7,7 @@
 import {
   Building2,
   CalendarCheck,
+  Globe,
   ShoppingBag,
   Workflow,
   type LucideIcon,
@@ -27,6 +28,28 @@ export interface Service {
 export const services: Service[] = [
   {
     number: "01",
+    slug: "websites",
+    name: "Websites & Brand Sites",
+    tagline:
+      "Brand websites, marketing sites, and landing pages — fast, polished, on your domain in weeks.",
+    description:
+      "Templates make every business look the same. We design and build proper websites — multi-page corporate sites, brand-led marketing sites, product-led landing pages, brochure sites — with a real visual identity, not a Wix theme. Built on modern web tech (Next.js, Tailwind, Vercel) so they're fast, accessible, easy to update, and score well on Core Web Vitals from day one.",
+    features: [
+      "Custom-designed pages — no template look",
+      "Built around your brand, not a theme library",
+      "Lightning-fast on mobile and desktop, real Core Web Vitals targets",
+      "SEO foundations — sitemap, robots, OG cards, schema baked in",
+      "Easy content updates via simple CMS or git workflow",
+      "Forms, newsletter signup, multi-language support as needed",
+      "Hosted on Vercel — zero downtime, instant rollbacks",
+    ],
+    builtFor:
+      "Any business that needs more than a Facebook page — services firms, manufacturers, hospitality, schools, consultancies, startups. Your website is your storefront; treat it that way.",
+    icon: Globe,
+    inquirySubject: "FlowByte — Website inquiry",
+  },
+  {
+    number: "02",
     slug: "b2b-platforms",
     name: "Custom B2B Platforms",
     tagline:
@@ -48,7 +71,7 @@ export const services: Service[] = [
     inquirySubject: "FlowByte — B2B platform inquiry",
   },
   {
-    number: "02",
+    number: "03",
     slug: "booking-operations",
     name: "Booking & Service Operations",
     tagline:
@@ -71,7 +94,7 @@ export const services: Service[] = [
     inquirySubject: "FlowByte — Booking system inquiry",
   },
   {
-    number: "03",
+    number: "04",
     slug: "ecommerce",
     name: "E-Commerce Stores",
     tagline:
@@ -93,7 +116,7 @@ export const services: Service[] = [
     inquirySubject: "FlowByte — E-commerce store inquiry",
   },
   {
-    number: "04",
+    number: "05",
     slug: "internal-systems",
     name: "Internal Systems & Automation",
     tagline:

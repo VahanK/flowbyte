@@ -8,6 +8,8 @@ interface ServicePreviewProps {
 
 export function ServicePreview({ slug }: ServicePreviewProps) {
   switch (slug) {
+    case "websites":
+      return <WebsitesPreview />
     case "b2b-platforms":
       return <B2BPreview />
     case "booking-operations":
@@ -47,6 +49,71 @@ function PreviewFrame({
       </div>
       <div className="p-5">{children}</div>
     </div>
+  )
+}
+
+/* ─── Websites: brand site landing ─── */
+
+function WebsitesPreview() {
+  return (
+    <PreviewFrame url="your-business.com">
+      <div className="space-y-4">
+        <div className="flex items-center justify-between pb-3 border-b border-edge">
+          <div className="flex items-center gap-2">
+            <div className="size-5 rounded bg-primary flex items-center justify-center">
+              <span className="text-[8px] font-bold text-surface">B</span>
+            </div>
+            <span className="font-display text-xs font-semibold text-primary">
+              YourBrand
+            </span>
+          </div>
+          <div className="hidden sm:flex items-center gap-3 text-[9px] text-muted">
+            <span>About</span>
+            <span>Services</span>
+            <span>Work</span>
+            <span className="px-2.5 py-1 rounded bg-primary text-surface font-medium">
+              Get a quote
+            </span>
+          </div>
+        </div>
+
+        <div className="py-1">
+          <span className="text-[9px] font-semibold uppercase tracking-wider text-accent block mb-1.5">
+            Architecture · Beirut
+          </span>
+          <h4 className="font-display text-lg font-semibold text-primary leading-[1.05] mb-2 tracking-tight">
+            Spaces that tell{" "}
+            <span className="text-accent">your story</span>.
+          </h4>
+          <p className="text-[10px] text-muted leading-relaxed mb-3 max-w-[280px]">
+            A boutique architecture studio creating residences and interiors
+            across Beirut and the region.
+          </p>
+          <div className="flex items-center gap-2">
+            <span className="text-[9px] font-medium px-2.5 py-1 rounded bg-primary text-surface">
+              View portfolio
+            </span>
+            <span className="text-[9px] font-medium px-2.5 py-1 rounded border border-edge text-primary">
+              Get in touch
+            </span>
+          </div>
+        </div>
+
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between">
+            <span className="text-[9px] font-semibold text-primary">
+              Featured projects
+            </span>
+            <span className="text-[8px] text-muted">View all →</span>
+          </div>
+          <div className="grid grid-cols-3 gap-1.5">
+            <div className="aspect-[4/3] rounded border border-edge bg-warning/15" />
+            <div className="aspect-[4/3] rounded border border-edge bg-accent/12" />
+            <div className="aspect-[4/3] rounded border border-edge bg-accent-2/12" />
+          </div>
+        </div>
+      </div>
+    </PreviewFrame>
   )
 }
 

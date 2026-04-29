@@ -10,11 +10,20 @@ interface ConceptBuild {
   type: string
   stack: string[]
   description: string
-  accent: "blue" | "amber" | "green"
-  thumb: "wholesale" | "booking" | "clinic"
+  accent: "neutral" | "blue" | "amber" | "green"
+  thumb: "website" | "wholesale" | "booking" | "clinic"
 }
 
 const concepts: ConceptBuild[] = [
+  {
+    name: "Architecture Studio Site",
+    type: "Brand Website",
+    stack: ["Next.js", "Vercel"],
+    description:
+      "Editorial brand site for a boutique architecture studio — typographic hero, project portfolio with case studies, simple CMS for the team to add new work without a developer.",
+    accent: "neutral",
+    thumb: "website",
+  },
   {
     name: "Wholesale Operations Portal",
     type: "B2B Platform",
@@ -45,12 +54,14 @@ const concepts: ConceptBuild[] = [
 ]
 
 const accentMap = {
+  neutral: "from-edge/30 to-transparent",
   blue: "from-accent/8 to-transparent",
   amber: "from-warning/8 to-transparent",
   green: "from-accent-2/10 to-transparent",
 }
 
 const dotMap = {
+  neutral: "bg-primary",
   blue: "bg-accent",
   amber: "bg-warning",
   green: "bg-accent-2",
@@ -74,7 +85,7 @@ export function Work() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {concepts.map((concept, i) => (
             <motion.article
               key={concept.name}

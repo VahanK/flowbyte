@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "FlowByte — Custom platforms for Lebanese businesses",
     short_name: "FlowByte",
     description:
-      "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow.",
+      "Brand websites, e-commerce, booking systems, B2B portals, internal dashboards — designed around your business.",
     start_url: "/",
     display: "standalone",
     background_color: "#FFFFFF",
