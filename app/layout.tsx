@@ -1,5 +1,8 @@
 import type { Metadata } from "next"
 import { Manrope, Inter } from "next/font/google"
+import Script from "next/script"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css"
 
 const manrope = Manrope({
@@ -53,6 +56,37 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "FlowByte",
+  url: "https://flow-byte.com",
+  logo: "https://flow-byte.com/logo.png",
+  description:
+    "Wholesale portals, booking systems, e-commerce, internal dashboards — designed around your workflow, shipped in weeks.",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      email: "contact@flow-byte.com",
+      contactType: "customer support",
+      areaServed: "LB",
+      availableLanguage: ["English", "Arabic"],
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+961-71-180-871",
+      contactType: "sales",
+      areaServed: "LB",
+      availableLanguage: ["English", "Arabic"],
+    },
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "LB",
+    addressLocality: "Beirut",
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -62,7 +96,16 @@ export default function RootLayout({
       className={`${manrope.variable} ${inter.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-surface text-primary">
+        <Script
+          id="ld-organization"
+          type="application/ld+json"
+          strategy="beforeInteractive"
+        >
+          {JSON.stringify(organizationSchema)}
+        </Script>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

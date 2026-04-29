@@ -239,7 +239,7 @@ function InternalPreview() {
   ]
 
   return (
-    <PreviewFrame url="ops.flowbyte.internal">
+    <PreviewFrame url="ops.flow-byte.internal">
       <div className="space-y-3">
         <div className="grid grid-cols-3 gap-2">
           {kpis.map((kpi) => (
